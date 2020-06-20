@@ -22,7 +22,7 @@ function copyToClip(content, message) {
     document.execCommand('copy');
     document.body.removeChild(aux);
     if (message == null) {
-        Toast('%E5%A4%8D%E5%88%B6%E6%88%90%E5%8A%9F%EF%BC%9A' + content);
+        Toast('复制成功:' + content);
     } else {
         Toast(message);
     }
