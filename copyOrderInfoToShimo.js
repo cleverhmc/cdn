@@ -23,5 +23,5 @@ javascript: (function () {
     }
     var sellprice = document.querySelector('div.buyer-address>div>p.memo');
     sellprice = sellprice ? sellprice.innerText.match(/买家实付款：(.+) /)[1] : '';
-    copyToClip(title + '%09' + name + '%09' + buyprice + '%09%09' + sellprice + '%09%09%09' + buyaccount);
+    copyToClip(title + '\t' + name + '\t' + buyprice + '\t\t' + sellprice + '\t\t\t' + buyaccount);
 })();
