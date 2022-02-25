@@ -91,5 +91,3 @@ const export2Excel = (theadData, tbodyData, dataname) => {
         // 导出表格
         tableToNotIE(table, dataname)
 }
-
-export export2Excel
