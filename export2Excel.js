@@ -55,12 +55,11 @@ const tableToNotIE = (function () {
 // 导出函数
 const export2Excel = (theadData, tbodyData, dataname) => {
 
-    let re = /http/// 字符串中包含http,则默认为图片地址
+    let re = /http.+\.(jpg|jpeg|png|gif)($|\?)/// 字符串中包含http,则默认为图片地址
         let th_len = theadData.length // 表头的长度
         let tb_len = tbodyData.length // 记录条数
-        let width = 90 // 设置图片大小
-        let height = 90
-
+        let width = 30// 设置图片大小
+        let height = 30
         // 添加表头信息
         let thead = '<thead><tr>'
         for (let i = 0; i < th_len; i++) {
