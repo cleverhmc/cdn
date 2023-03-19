@@ -68,7 +68,7 @@ var qrcode = document.createElement("img");
 	qrcode.setAttribute('class','shaunsational_qr');
 	qrcode.setAttribute('id','qrcode');
 	qrcode.setAttribute('style','margin:10px;cursor:pointer;');
-	qrcode.setAttribute('src','http://qr.topscan.com/api.php?text='+encodeURIComponent(qrData));
+	qrcode.setAttribute('src','https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+encodeURIComponent(qrData));
 	qrcode.setAttribute('title','Click to close.');
 	
 var qrurl = document.createElement("div");
